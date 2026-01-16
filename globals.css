@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Human-friendly palette (modern minimal) */
+:root {
+  --bg: 249 250 251;          /* near-white */
+  --fg: 17 24 39;             /* charcoal */
+  --card: 255 255 255;
+  --border: 17 24 39 / 0.10;
+  --muted: 17 24 39 / 0.60;
+  --accent: 79 70 229;        /* indigo */
+  --accent2: 16 185 129;      /* emerald */
+}
+
+.dark {
+  --bg: 10 12 16;
+  --fg: 229 231 235;
+  --card: 15 18 24;
+  --border: 229 231 235 / 0.12;
+  --muted: 229 231 235 / 0.65;
+  --accent: 99 102 241;
+  --accent2: 52 211 153;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: rgb(var(--fg));
+  background: rgb(var(--bg));
+}
